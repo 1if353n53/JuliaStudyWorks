@@ -1,5 +1,3 @@
-include("anotherFile.jl")
-
 #Роман Лукьянчиков | КМБО-04-20
 #Task 1
 function findallmax(A::AbstractArray)::AbstractArray{Int}
