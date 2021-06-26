@@ -13,3 +13,18 @@ end
 a = [1, 1, 2, 3, 5]
 a = insertX!(a, 4, 30)
 for i = 1:length(a) print(a[i], " ") end
+
+function deleteat!(A, n)
+	answer = []
+	for i = 1:n - 1
+        push!(answer, A[i])
+    	end
+	for i = n + 1:length(A)
+        push!(answer, A[i]) 
+    	end
+	A = answer
+	return A
+end
+a = [1, 1, 2, 3, 5]
+a = deleteat!(a, 4)
+for i = 1:length(a) print(a[i], " ") end
